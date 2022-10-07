@@ -33,6 +33,7 @@ INSTALLED_APPS = [
 
     # Third Party
     'requests',
+    'pip',
 
     # Local
     'msg',
