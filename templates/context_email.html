@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>readMD</title>
+</head>
+<body>
+
+<h2>Hi, {{ first_name }}</h2>
+
+{% if object.topic == 'birthday' %}
+    <p>Happy Birthday on your {{ age }}th Birthday</p>
+
+{% elif object.topic == 'anniversary' %}
+    <p>You've been here for {{ age }} years and we couldn't be happier. </p>
+{% else %}
+    <p>We're not sure why you are here. But you opened this email and that makes us happy.</p>
+{% endif %}
+
+</body>
+</html>
